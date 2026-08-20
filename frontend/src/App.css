@@ -1,0 +1,292 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(circle at top left, rgba(29, 78, 216, 0.08), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.06), transparent 24%),
+    #f4f7fb;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-navbar {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.28);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+  padding: 0.55rem 0;
+}
+
+.app-navbar__inner {
+  max-width: 1100px;
+}
+
+.app-navbar__brand,
+.app-navbar__brand:hover,
+.app-navbar__brand:focus {
+  color: #0f172a !important;
+  font-weight: 700;
+  font-size: 1.45rem;
+  letter-spacing: -0.03em;
+}
+
+.app-navbar .navbar-toggler {
+  border-color: rgba(100, 116, 139, 0.35);
+}
+
+.app-navbar .navbar-toggler-icon {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(15%) saturate(973%) hue-rotate(182deg) brightness(94%) contrast(92%);
+}
+
+.app-navbar__links .nav-link {
+  color: #334155;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  margin: 0.15rem 0.2rem;
+}
+
+.app-navbar__links .nav-link:hover,
+.app-navbar__links .nav-link:focus,
+.app-navbar__links .nav-link.active {
+  color: #0f172a;
+  background: rgba(148, 163, 184, 0.18);
+}
+
+.app-footer {
+  margin-top: auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-top: 1px solid rgba(148, 163, 184, 0.28);
+  padding: 1rem 1.25rem;
+}
+
+.app-footer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #64748b;
+}
+
+.app-footer__title {
+  color: #0f172a;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.app-footer__text {
+  font-size: 0.95rem;
+}
+
+.app-page,
+.app-auth-wrapper {
+  flex: 1;
+  width: 100%;
+}
+
+.app-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.app-page__card,
+.app-auth-card,
+.app-profile-card,
+.app-error-card {
+  width: min(100%, 560px);
+  background: #fff;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+.app-page__card {
+  padding: 1.5rem;
+}
+
+.app-page__headline,
+.app-brand,
+.app-profile-card h2,
+.app-error-card h2 {
+  color: #0f172a;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.app-page__subtext,
+.app-profile-card p,
+.app-error-card p,
+.app-signup-note,
+.app-form .form-text {
+  color: #64748b !important;
+}
+
+.app-page__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 1.5rem;
+  width: min(100%, 1100px);
+  align-items: center;
+}
+
+.app-hero {
+  color: #0f172a;
+}
+
+.app-eyebrow {
+  color: #2563eb;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  font-size: 0.78rem;
+}
+
+.app-hero h1 {
+  margin-top: 0;
+  max-width: 10ch;
+}
+
+.app-hero p {
+  max-width: 34rem;
+  line-height: 1.55;
+  font-size: 1.03rem;
+}
+
+.app-hero__statrow {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.app-hero__stat {
+  background: #fff;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.app-auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.app-auth-card {
+  width: min(100%, 430px);
+  padding: 1.5rem;
+}
+
+.app-form {
+  text-align: left;
+}
+
+.app-form .form-label {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.app-form .app-input,
+.app-form .form-control {
+  min-height: 44px;
+  border-radius: 12px;
+  border-color: #cbd5e1;
+}
+
+.app-form .form-control:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.15);
+}
+
+.app-button {
+  width: 100%;
+  min-height: 44px;
+  border: none !important;
+  background: linear-gradient(180deg, #2563eb 0%, #1d4ed8 100%) !important;
+  font-weight: 700;
+  border-radius: 12px !important;
+}
+
+.app-button:hover,
+.app-button:focus {
+  background: linear-gradient(180deg, #1d4ed8 0%, #1e40af 100%) !important;
+}
+
+.app-signup-note {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.app-signup-note a,
+.app-hero a,
+.app-page a,
+.app-profile-card a,
+.app-error-card a {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.app-signup-note a:hover,
+.app-hero a:hover,
+.app-page a:hover,
+.app-profile-card a:hover,
+.app-error-card a:hover {
+  text-decoration: underline;
+}
+
+.app-profile-card,
+.app-error-card {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.app-profile-card img,
+.app-error-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+  .app-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-page {
+    padding: 1.25rem 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .app-navbar__brand,
+  .app-navbar__brand:hover,
+  .app-navbar__brand:focus {
+    font-size: 1.2rem;
+  }
+
+  .app-page,
+  .app-auth-wrapper {
+    padding: 1rem 0.75rem;
+  }
+
+  .app-page__card,
+  .app-auth-card,
+  .app-profile-card,
+  .app-error-card {
+    border-radius: 6px;
+    padding: 1rem;
+  }
+}
